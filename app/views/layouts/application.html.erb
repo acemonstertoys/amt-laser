@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>AmtLaser</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  </head>
+
+  <body class="<%= controller.controller_name %> <%= controller.action_name%>" id="<%= controller.controller_name%>-<%= controller.action_name%>">
+
+   <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <%= render "layouts/nav" %>
+
+          <div class="inner cover">
+
+            <% flash.each do |type, message| %>
+              <div class="alert <%= bootstrap_class_for(type) %> fade in">
+                <button class="close" data-dismiss="alert">×</button>
+                <%= message %>
+              </div>
+            <% end %>        
+            <%= yield %>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Built with <%= link_to "love", "http://github.com/synth"%></p>
+            </div>
+          </div>          
+    
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+

@@ -1,0 +1,7 @@
+.masthead.clearfix
+  .inner
+    %h3.masthead-brand= link_to "AMT | Laser", root_path
+    %nav.nav.nav-masthead
+      /= link_to "Home", root_path, class: "nav-link #{'active' if current_page?(root_path) || current_page?(controller: 'log_entries', action: 'create')}"
+      = link_to "Add Entry", new_log_entry_path, class: "nav-link #{'active' if current_page?(new_log_entry_path) || current_page?(root_path)}"
+      = link_to "Log", log_entries_path, class: "nav-link #{'active' if current_page?(log_entries_path)}"

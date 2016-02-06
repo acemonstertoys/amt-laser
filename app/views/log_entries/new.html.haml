@@ -1,0 +1,18 @@
+%h1.cover-heading Laser Log Book
+%p.lead Log your time on the AMT Laser
+
+.well
+  = simple_form_for @entry do |f|
+
+    %fieldset.form-group
+      .col-lg-12
+        = f.input :email
+
+    %fieldset.form-group
+      .col-lg-6
+        = f.input :start_count
+      .col-lg-6
+        = f.input :end_count
+
+    .col-lg-12
+      = f.submit "Save", class: "btn btn-primary btn-lg"
