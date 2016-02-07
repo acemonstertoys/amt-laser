@@ -22,6 +22,7 @@ gem 'devise', github: 'plataformatec/devise'
 gem 'omniauth'
 gem 'omniauth-slack'
 gem 'dotenv-rails'
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 
 group :development, :test do
   gem 'byebug'

@@ -1,10 +1,12 @@
 .well
   %h3 Entries
-  %table.table.table-bordered
-    %tr
-      %th Entry date
-      - if current_user.is_admin?
-        %th "Email"
-      %th Start
-      %th End
-    = render @entries
+  %table.table.table-bordered.datatable
+    %thead
+      %tr
+        %th Entry date
+        - if current_user.is_admin?
+          %th "Email"
+        %th Start
+        %th End
+    %tbody
+      = render @entries

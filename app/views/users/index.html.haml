@@ -1,9 +1,11 @@
 .well
   %h3 Users
-  %table.table.table-bordered
-    %tr
-      %th Email
-      %th Admin/User
-      %th Nickname
-      %th Created At
-    = render @users
+  %table.table.table-bordered.datatable
+    %thead
+      %tr
+        %th Email
+        %th Admin/User
+        %th Nickname
+        %th Created At
+    %tbody
+      = render @users
