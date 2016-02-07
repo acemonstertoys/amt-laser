@@ -1,0 +1,5 @@
+%tr[user]
+  %td= user.email
+  %td.admin-cell= render "admin_cell", user: user
+  %td= user.nickname
+  %td= user.created_at.strftime("%Y-%m-%d")

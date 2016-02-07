@@ -1,5 +1,6 @@
-%tr
+%tr[log_entry]
   %td= log_entry.created_at.strftime("%m/%d/%Y")
-  %td= log_entry.email
+  - if current_user.is_admin?
+    %td= log_entry.email 
   %td= log_entry.start_count
   %td= log_entry.end_count

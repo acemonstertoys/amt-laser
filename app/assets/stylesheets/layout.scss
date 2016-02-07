@@ -165,3 +165,24 @@ form {
     width: 42rem;
   }
 }
+
+.site-wrapper-inner {
+  vertical-align: top;
+  padding-top: 150px;
+
+  .cover-container {
+    .inner.cover {
+    }
+  }
+
+}
+
+a.dropdown-toggle {
+  text-decoration: none;
+}
+
+.well {
+  h1,h2,h3,h4 {
+    text-align: left
+  }
+}

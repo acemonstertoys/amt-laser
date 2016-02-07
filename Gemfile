@@ -18,7 +18,10 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'rails-assets-tether', '>= 1.1.0'
 gem 'responders'
 gem 'simple_form'
-gem 'activerecord-session_store'
+gem 'devise', github: 'plataformatec/devise'
+gem 'omniauth'
+gem 'omniauth-slack'
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'byebug'

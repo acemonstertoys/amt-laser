@@ -1,0 +1,4 @@
+(function(){
+    var content = '<%= render "admin_cell", user: @user -%>';
+    $("#user_<%= @user.id%> .admin-cell").html(content);
+})();

@@ -1,0 +1,2 @@
+<% label = user.is_admin? ? 'Admin' : 'User' %>
+<%= link_to_if user != current_user, label, toggle_admin_user_path(user), remote: true, method: :post -%>
