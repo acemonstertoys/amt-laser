@@ -4,7 +4,7 @@
     %thead
       %tr
         %th Entry date
-        - if current_user.is_admin?
+        - if current_user && current_user.is_admin?
           %th "Email"
         %th Start
         %th End

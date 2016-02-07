@@ -9,7 +9,7 @@
         .nav-item.nav-link.dropdown
           = link_to "Hello #{current_user.nickname}", "#", class: "dropdown-toggle", data: {toggle: "dropdown"}
           .dropdown-menu
-            = link_to "Users", users_path, class: "dropdown-item" if current_user.is_admin?
+            = link_to "Users", users_path, class: "dropdown-item" if current_user && current_user.is_admin?
             = link_to "Logout", destroy_user_session_path, :method => :delete, class: "dropdown-item"
       - else
         = link_to "Sign in with Slack", user_omniauth_authorize_path(:slack), class: "nav-link"
