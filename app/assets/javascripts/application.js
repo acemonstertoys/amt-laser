@@ -28,7 +28,11 @@ $(document).on('page:change', function () {
   $('.datatable').DataTable({
     // ajax: ...,
     // autoWidth: false,
-    paging: false
+    paging: false,
+    dom: 'Bfrtip',
+    buttons: [
+      'copy', 'csv', 'excel', 'pdf', 'print'
+    ]
     // pagingType: 'full_numbers',
     // processing: true,
     // serverSide: true,
