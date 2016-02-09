@@ -114,6 +114,7 @@ GEM
     multi_json (1.11.2)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    mysql2 (0.4.2)
     nio4r (1.2.1)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -220,6 +221,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-datatables-rails!
   jquery-rails
+  mysql2
   omniauth
   omniauth-slack
   puma

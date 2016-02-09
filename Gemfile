@@ -23,6 +23,7 @@ gem 'omniauth'
 gem 'omniauth-slack'
 gem 'dotenv-rails'
 gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+gem 'mysql2'
 
 group :development, :test do
   gem 'byebug'
