@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine On
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} !-f
+RewriteRule ^(assets)($|/) - [L]
+RewriteRule ^(.*)$ http://localhost:3000/~laser/log/$1 [L,P]
+#RewriteRule /~laser/log http://localhost:3000/~laser/log/
