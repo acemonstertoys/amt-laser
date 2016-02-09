@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'index.html', to: 'log_entries#new'
   get 'user/index'
 
   get 'user/new'
