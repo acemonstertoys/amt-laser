@@ -149,6 +149,7 @@ form {
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
+    padding-top: 0px;
   }
   /* Handle the widths */
   .masthead,
@@ -168,6 +169,7 @@ form {
 
 .site-wrapper-inner {
   vertical-align: top;
+  padding-top: 150px;
 
   .cover-container {
     .inner.cover {
