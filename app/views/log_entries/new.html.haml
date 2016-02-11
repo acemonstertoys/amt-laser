@@ -14,5 +14,9 @@
       .col-lg-6
         = f.input :end_count
 
+    %fieldset.form-group
+      .col-lg-12
+        = f.input :notes, label: "Material/Notes"
+
     .col-lg-12
       = f.submit "Save", class: "btn btn-primary btn-lg"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160206235458) do
+ActiveRecord::Schema.define(version: 20160211070429) do
 
   create_table "log_entries", force: :cascade do |t|
     t.string   "email"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20160206235458) do
     t.integer  "end_count"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.text     "notes"
   end
 
   create_table "sessions", force: :cascade do |t|
