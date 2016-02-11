@@ -12,34 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require tether
 //= require dataTables/jquery.dataTables
 //= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 //= require dataTables/jquery.dataTables
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
-$(function(){
-
-
-
-})
-
-$(document).on('page:change', function () {
-  $('.datatable').DataTable({
-    // ajax: ...,
-    // autoWidth: false,
-    paging: false,
-    dom: 'Bfrtip',
-    buttons: [
-      'copy', 'csv', 'excel', 'pdf', 'print'
-    ]
-    // pagingType: 'full_numbers',
-    // processing: true,
-    // serverSide: true,
-
-    // Optional, if you want full pagination controls.
-    // Check dataTables documentation to learn more about available options.
-    // http://datatables.net/reference/option/pagingType
-  });
-
-});
