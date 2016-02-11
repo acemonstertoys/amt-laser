@@ -1,24 +1,22 @@
 ## README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to deploy changes
 
-Things you may want to cover:
+    ssh -p 44160 <user>@space.acemonstertoys.org
+    sudo su - laser
+    cd public_html/log/
+    git pull origin master
 
-* Ruby version
+If making changes to database
 
-* System dependencies
+    RAILS_ENV=production rake db:migrate
 
-* Configuration
+If making changes to assets
 
-* Database creation
+    rm -fr public/~laser/
+    RAILS_ENV=production assets:precompile
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Restart server
+    
+    rake stop
+    RAILS_ENV=production rails s -d
